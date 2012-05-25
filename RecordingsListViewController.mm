@@ -55,7 +55,7 @@
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellID];
 	if (cell == nil)
 	{
-		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kCellID] autorelease];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kCellID];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
 	
@@ -96,7 +96,6 @@
     lecturePlayerController.recording = recording;
     
     [[self navigationController] pushViewController:lecturePlayerController animated:YES];
-    [lecturePlayerController release];
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
@@ -112,10 +111,6 @@
     }
 }
 
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {

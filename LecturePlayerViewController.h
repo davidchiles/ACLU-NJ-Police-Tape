@@ -32,20 +32,20 @@
     UILabel *submitLabel;
     UISwitch *locationSwitch;
 }
-@property (nonatomic, retain) IBOutlet UISwitch *locationSwitch;
-@property (nonatomic, retain) IBOutlet UIProgressView *progressView;
-@property (nonatomic, retain) IBOutlet UITextField *privateDescriptionTextField;
-@property (nonatomic, retain) IBOutlet UITextField *publicDescriptionTextField;
-@property (nonatomic, retain) IBOutlet UITextField *nameTextField;
-@property (nonatomic, retain) Recording* recording;
-@property (nonatomic, retain) IBOutlet UILabel *durationLabel;
-@property (nonatomic, retain) IBOutlet UILabel *currentTimeLabel;
-@property (nonatomic, retain)     NSTimer *playerUpdateTimer;
-@property (nonatomic, retain) IBOutlet UISlider *playerSlider;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *playButton;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *stopButton;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *submitButton;
-@property (nonatomic, retain)     AVAudioPlayer* player;
+@property (nonatomic) IBOutlet UISwitch *locationSwitch;
+@property (nonatomic) IBOutlet UIProgressView *progressView;
+@property (nonatomic) IBOutlet UITextField *privateDescriptionTextField;
+@property (nonatomic) IBOutlet UITextField *publicDescriptionTextField;
+@property (nonatomic) IBOutlet UITextField *nameTextField;
+@property (nonatomic) Recording* recording;
+@property (nonatomic) IBOutlet UILabel *durationLabel;
+@property (nonatomic) IBOutlet UILabel *currentTimeLabel;
+@property (nonatomic)     NSTimer *playerUpdateTimer;
+@property (nonatomic) IBOutlet UISlider *playerSlider;
+@property (nonatomic) IBOutlet UIBarButtonItem *playButton;
+@property (nonatomic) IBOutlet UIBarButtonItem *stopButton;
+@property (nonatomic) IBOutlet UIBarButtonItem *submitButton;
+@property (nonatomic)     AVAudioPlayer* player;
 
 - (IBAction)submitPressed:(id)sender;
 - (IBAction)playPressed:(id)sender;
@@ -53,6 +53,6 @@
 - (void) updateElapsedTime:(NSTimer *) timer;
 - (void) updateLabel:(UILabel*)label withTime:(NSTimeInterval)time;
 - (IBAction)seek:(id)sender;
-@property (nonatomic, retain) IBOutlet UILabel *submitLabel;
+@property (nonatomic) IBOutlet UILabel *submitLabel;
 
 @end

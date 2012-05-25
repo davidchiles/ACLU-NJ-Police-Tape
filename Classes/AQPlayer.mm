@@ -188,10 +188,10 @@ void AQPlayer::CreateQueueForFile(CFStringRef inFilePath)
             
             NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
             NSString *documentFolderPath = [searchPaths objectAtIndex: 0];
-            NSString *recordFile = [documentFolderPath stringByAppendingPathComponent: (NSString*)inFilePath];
+            NSString *recordFile = [documentFolderPath stringByAppendingPathComponent: (__bridge NSString*)inFilePath];
             
             
-			sndFile = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (CFStringRef)recordFile, kCFURLPOSIXPathStyle, false);
+			sndFile = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (__bridge CFStringRef)recordFile, kCFURLPOSIXPathStyle, false);
 			//NSLog((NSString *)inFilePath);
             if (!sndFile) { printf("can't parse file path\n"); return; }
 			

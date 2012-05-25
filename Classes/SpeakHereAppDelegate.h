@@ -57,9 +57,9 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
     UINavigationController *navController;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet SpeakHereViewController *viewController;
-@property (nonatomic, retain) UINavigationController *navController;
+@property (nonatomic) IBOutlet UIWindow *window;
+@property (nonatomic) IBOutlet SpeakHereViewController *viewController;
+@property (nonatomic) UINavigationController *navController;
 
 @end
 

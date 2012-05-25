@@ -49,6 +49,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 
 #import "SpeakHereViewController.h"
 #import "RecordingsListViewController.h"
+#import "ACLUKnowYourRightsViewController.h"
 
 @implementation SpeakHereViewController
 
@@ -108,13 +109,19 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 - (IBAction)playPressed:(id)sender {
     RecordingsListViewController *recordingListController = [[RecordingsListViewController alloc] init];
     [self.navigationController pushViewController:recordingListController animated:YES];
-    [recordingListController release];
 }
+
+- (IBAction)KnowYourRightsButtonPressed:(id)sender
+{
+    ACLUKnowYourRightsViewController * knowYourRightsViewController = [[ACLUKnowYourRightsViewController alloc] init];
+    [self.navigationController pushViewController:knowYourRightsViewController animated:YES];
+    
+    
+}
+
+
 @end

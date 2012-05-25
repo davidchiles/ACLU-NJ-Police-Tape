@@ -35,25 +35,6 @@
     return self;
 }
 
-- (void)dealloc
-{
-    [player release];
-    [recording release];
-    [durationLabel release];
-    [currentTimeLabel release];
-    [playerUpdateTimer release];
-    [playerSlider release];
-    [playButton release];
-    [stopButton release];
-    [submitButton release];
-    [nameTextField release];
-    [publicDescriptionTextField release];
-    [privateDescriptionTextField release];
-    [progressView release];
-    [submitLabel release];
-    [locationSwitch release];
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -82,8 +63,8 @@
     isPlaying = NO;
     
     
-    playerUpdateTimer = [[NSTimer scheduledTimerWithTimeInterval:1.0 target:self
-                                                        selector:@selector(updateElapsedTime:) userInfo:nil repeats:YES] retain];
+    playerUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self
+                                                        selector:@selector(updateElapsedTime:) userInfo:nil repeats:YES];
     
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
@@ -179,7 +160,7 @@
 
 - (IBAction)submitPressed:(id)sender 
 {
-    UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Submit to OpenWatch" message:@"Would you like to submit your recording to www.openwatch.net?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:nil] autorelease];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Submit to OpenWatch" message:@"Would you like to submit your recording to www.openwatch.net?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:nil];
     [alert addButtonWithTitle:@"Yes"];
     [alert show];
 }
@@ -229,7 +210,6 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Complete" message:@"The recording was uploaded successfully to www.openwatch.net" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [alert show];
-    [alert release];
     
     // Set TRUE if file was sent properly
     recording.isSubmitted = YES;
@@ -244,7 +224,6 @@
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Error" message:@"Upload failed, please check your internet connection and try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
     [alert show];
-    [alert release];
 
     submitLabel.text = @"Submission failed!";
     submitLabel.textColor = [UIColor redColor];

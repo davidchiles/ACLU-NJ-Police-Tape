@@ -14,7 +14,7 @@
     NSMutableArray* listContent;
 }
 
-@property (nonatomic, retain) NSMutableArray* listContent;
+@property (nonatomic) NSMutableArray* listContent;
 
 
 @end

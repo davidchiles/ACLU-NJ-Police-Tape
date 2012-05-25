@@ -20,12 +20,12 @@
 } 
 
 
-@property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *publicDescription;
-@property (nonatomic, retain) NSString *privateDescription;
-@property (nonatomic, retain) NSString *location;
-@property (nonatomic, retain) NSDate *date;
-@property (nonatomic, retain) NSURL *url;
+@property (nonatomic) NSString *name;
+@property (nonatomic) NSString *publicDescription;
+@property (nonatomic) NSString *privateDescription;
+@property (nonatomic) NSString *location;
+@property (nonatomic) NSDate *date;
+@property (nonatomic) NSURL *url;
 @property BOOL isSubmitted;
 
 + (id)recordingWithName:(NSString*)name publicDescription:(NSString*)publicDescription privateDescription:(NSString*)privateDescription location:(NSString*)location date:(NSDate*)date url:(NSURL*)url;

@@ -1,15 +1,18 @@
 //
-//  StealthModeViewController.m
+//  ACLUKnowYourRights.m
 //  CopRecorder
 //
-//  Created by Christopher Ballinger on 6/25/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by David Chiles on 5/25/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "StealthModeViewController.h"
+#import "ACLUKnowYourRightsViewController.h"
 
+@interface ACLUKnowYourRightsViewController ()
 
-@implementation StealthModeViewController
+@end
+
+@implementation ACLUKnowYourRightsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -19,22 +22,6 @@
     }
     return self;
 }
-
-
--(void)viewWillAppear:(BOOL)animated
-{
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
@@ -51,7 +38,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 

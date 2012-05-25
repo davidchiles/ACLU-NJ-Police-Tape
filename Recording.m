@@ -22,7 +22,7 @@
 
 + (id)recordingWithName:(NSString*)name publicDescription:(NSString*)publicDescription privateDescription:(NSString*)privateDescription location:(NSString*)location date:(NSDate*)date url:(NSURL*)url
 {
-    Recording *newRecording = [[[self alloc] init] autorelease];
+    Recording *newRecording = [[self alloc] init];
     
     newRecording.name = name;
     newRecording.publicDescription = publicDescription;
@@ -43,8 +43,8 @@
     NSString* cafPath = [path stringByReplacingOccurrencesOfString:@".audio.plist" withString:@".caf"];
     NSURL *url = [NSURL fileURLWithPath:cafPath];
     
-    NSDictionary *metadata = [[[NSDictionary alloc] initWithContentsOfFile:path] autorelease];
-    Recording *newRecording = [[[self alloc] init] autorelease];
+    NSDictionary *metadata = [[NSDictionary alloc] initWithContentsOfFile:path];
+    Recording *newRecording = [[self alloc] init];
     NSString *prefix = [[fileName componentsSeparatedByString:@"."] objectAtIndex:0];
     
     
@@ -67,7 +67,7 @@
     NSString *metadataPath = [documentsDirectory stringByAppendingPathComponent:fileName];
     
     
-    NSMutableDictionary *metadata = [[[NSMutableDictionary alloc] init] autorelease];
+    NSMutableDictionary *metadata = [[NSMutableDictionary alloc] init];
     [metadata setObject:name forKey:@"name"];
     [metadata setObject:publicDescription forKey:@"publicDescription"];
     [metadata setObject:privateDescription forKey:@"privateDescription"];
@@ -99,7 +99,6 @@
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"More Info Please!" message:@"It appears you are trying to submit a recording without a title or public description.\n\nPlease fill in this information and try again." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
-        [alert release];
     }
     else
     {
@@ -131,16 +130,6 @@
     }
 }
 
--(void)dealloc
-{
-    [name release];
-    [publicDescription release];
-    [privateDescription release];
-    [location release];
-    [date release];
-    [url release];
-    [super dealloc];
-}
 
 
 @end

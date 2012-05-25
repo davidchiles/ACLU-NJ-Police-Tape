@@ -240,11 +240,11 @@ void AQRecorder::StartRecord(CFStringRef inRecordFile)
 		//NSString *recordFile = [NSTemporaryDirectory() stringByAppendingPathComponent: (NSString*)inRecordFile];	
 		NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentFolderPath = [searchPaths objectAtIndex: 0];
-        NSString *recordFile = [documentFolderPath stringByAppendingPathComponent: (NSString*)inRecordFile];
+        NSString *recordFile = [documentFolderPath stringByAppendingPathComponent: (__bridge NSString*)inRecordFile];
         
 		
         
-        CFStringRef fileNameEscaped = CFURLCreateStringByAddingPercentEscapes( NULL, (CFStringRef)recordFile, NULL, NULL, kCFStringEncodingUTF8 );
+        CFStringRef fileNameEscaped = CFURLCreateStringByAddingPercentEscapes( NULL, (__bridge CFStringRef)recordFile, NULL, NULL, kCFStringEncodingUTF8 );
         url = CFURLCreateWithString(kCFAllocatorDefault, fileNameEscaped, NULL);
         
         //NSLog((NSString*)fileNameEscaped);

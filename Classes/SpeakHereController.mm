@@ -190,7 +190,7 @@ char *OSTypeToStr(char *buf, OSType t)
 	player->DisposeQueue(true);
     
 	// now create a new queue for the recorded file
-	player->CreateQueueForFile((CFStringRef)currentFileName);
+	player->CreateQueueForFile((__bridge CFStringRef)currentFileName);
     
 	// Set the button's state back to "record"
 	btn_record.title = @"Record";
@@ -321,7 +321,7 @@ char *OSTypeToStr(char *buf, OSType t)
 void interruptionListener(	void *	inClientData,
                           UInt32	inInterruptionState)
 {
-	SpeakHereController *THIS = (SpeakHereController*)inClientData;
+	SpeakHereController *THIS = (__bridge SpeakHereController*)inClientData;
 	if (inInterruptionState == kAudioSessionBeginInterruption)
 	{
 		if (THIS->recorder->IsRunning()) {
@@ -347,7 +347,7 @@ void propListener(	void *                  inClientData,
                   UInt32                  inDataSize,
                   const void *            inData)
 {
-	SpeakHereController *THIS = (SpeakHereController*)inClientData;
+	SpeakHereController *THIS = (__bridge SpeakHereController*)inClientData;
 	if (inID == kAudioSessionProperty_AudioRouteChange)
 	{
 		CFDictionaryRef routeDictionary = (CFDictionaryRef)inData;			
