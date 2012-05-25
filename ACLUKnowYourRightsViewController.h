@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ACLUKnowYourRightsViewController : UIViewController
+@interface ACLUKnowYourRightsViewController : UIViewController <UIWebViewDelegate>
+{
+    NSDictionary * webViewInfo;
+}
+
+
+
+
+@property (nonatomic,strong) UISegmentedControl * pageControl;
+@property (nonatomic,strong) UIWebView * webView;
+
 
 @end

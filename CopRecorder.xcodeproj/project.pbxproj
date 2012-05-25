@@ -27,6 +27,12 @@
 		6337BFC5156FF64D005A3FB3 /* SpeakHereController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6337BFC4156FF64D005A3FB3 /* SpeakHereController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6337BFCD156FFCF0005A3FB3 /* ACLUKnowYourRights.m in Sources */ = {isa = PBXBuildFile; fileRef = 6337BFCB156FFCF0005A3FB3 /* ACLUKnowYourRights.m */; };
 		6337BFCE156FFCF0005A3FB3 /* ACLUKnowYourRights.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFCC156FFCF0005A3FB3 /* ACLUKnowYourRights.xib */; };
+		6337BFD01570069C005A3FB3 /* knowYourRights.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFCF1570069C005A3FB3 /* knowYourRights.plist */; };
+		6337BFD515700B34005A3FB3 /* arrest.html in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFD115700B33005A3FB3 /* arrest.html */; };
+		6337BFD615700B34005A3FB3 /* car.html in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFD215700B33005A3FB3 /* car.html */; };
+		6337BFD715700B34005A3FB3 /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFD315700B33005A3FB3 /* home.html */; };
+		6337BFD815700B34005A3FB3 /* stop.html in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFD415700B33005A3FB3 /* stop.html */; };
+		6337BFDA157016C5005A3FB3 /* knowyourrights.css in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFD9157016C5005A3FB3 /* knowyourrights.css */; };
 		D94A6B3F1330668600A91096 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D94A6B3E1330668600A91096 /* icon.png */; };
 		D94A6B42133066A700A91096 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D94A6B40133066A700A91096 /* logo.png */; };
 		D9839B7213B6CF7700B3B20C /* LecturePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9839B6F13B6CF7700B3B20C /* LecturePlayerViewController.m */; };
@@ -107,9 +113,15 @@
 		6337BFBB156FF61F005A3FB3 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		6337BFC4156FF64D005A3FB3 /* SpeakHereController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SpeakHereController.mm; sourceTree = "<group>"; };
 		6337BFC6156FF748005A3FB3 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
-		6337BFCA156FFCF0005A3FB3 /* ACLUKnowYourRightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = ACLUKnowYourRightsViewController.h; sourceTree = "<group>"; };
+		6337BFCA156FFCF0005A3FB3 /* ACLUKnowYourRightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLUKnowYourRightsViewController.h; sourceTree = "<group>"; };
 		6337BFCB156FFCF0005A3FB3 /* ACLUKnowYourRights.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACLUKnowYourRights.m; sourceTree = "<group>"; };
 		6337BFCC156FFCF0005A3FB3 /* ACLUKnowYourRights.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACLUKnowYourRights.xib; sourceTree = "<group>"; };
+		6337BFCF1570069C005A3FB3 /* knowYourRights.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = knowYourRights.plist; sourceTree = "<group>"; };
+		6337BFD115700B33005A3FB3 /* arrest.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = arrest.html; sourceTree = "<group>"; };
+		6337BFD215700B33005A3FB3 /* car.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = car.html; sourceTree = "<group>"; };
+		6337BFD315700B33005A3FB3 /* home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = home.html; sourceTree = "<group>"; };
+		6337BFD415700B33005A3FB3 /* stop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = stop.html; sourceTree = "<group>"; };
+		6337BFD9157016C5005A3FB3 /* knowyourrights.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = knowyourrights.css; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D94A6B3E1330668600A91096 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		D94A6B41133066A700A91096 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/logo.png; sourceTree = "<group>"; };
@@ -262,6 +274,12 @@
 			isa = PBXGroup;
 			children = (
 				D9839BAC13B6FD3A00B3B20C /* eye.png */,
+				6337BFCF1570069C005A3FB3 /* knowYourRights.plist */,
+				6337BFD9157016C5005A3FB3 /* knowyourrights.css */,
+				6337BFD115700B33005A3FB3 /* arrest.html */,
+				6337BFD215700B33005A3FB3 /* car.html */,
+				6337BFD315700B33005A3FB3 /* home.html */,
+				6337BFD415700B33005A3FB3 /* stop.html */,
 				D9839BAD13B6FD3A00B3B20C /* eye@2x.png */,
 				D9839BA613B6F61A00B3B20C /* button.9.png */,
 				D9839BA713B6F61A00B3B20C /* buttonpressed.9.png */,
@@ -452,6 +470,12 @@
 				D9839BAE13B6FD3A00B3B20C /* eye.png in Resources */,
 				D9839BAF13B6FD3A00B3B20C /* eye@2x.png in Resources */,
 				6337BFCE156FFCF0005A3FB3 /* ACLUKnowYourRights.xib in Resources */,
+				6337BFD01570069C005A3FB3 /* knowYourRights.plist in Resources */,
+				6337BFD515700B34005A3FB3 /* arrest.html in Resources */,
+				6337BFD615700B34005A3FB3 /* car.html in Resources */,
+				6337BFD715700B34005A3FB3 /* home.html in Resources */,
+				6337BFD815700B34005A3FB3 /* stop.html in Resources */,
+				6337BFDA157016C5005A3FB3 /* knowyourrights.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

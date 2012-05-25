@@ -115,7 +115,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
     [self.navigationController pushViewController:recordingListController animated:YES];
 }
 
-- (IBAction)KnowYourRightsButtonPressed:(id)sender
+- (IBAction)knowYourRightsButtonPressed:(id)sender
 {
     ACLUKnowYourRightsViewController * knowYourRightsViewController = [[ACLUKnowYourRightsViewController alloc] init];
     [self.navigationController pushViewController:knowYourRightsViewController animated:YES];

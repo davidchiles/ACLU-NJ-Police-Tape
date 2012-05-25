@@ -56,7 +56,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 	IBOutlet SpeakHereController *controller;
 }
 - (IBAction)playPressed:(id)sender;
-- (IBAction)KnowYourRightsButtonPressed:(id)sender;
+- (IBAction)knowYourRightsButtonPressed:(id)sender;
 
 @end
 
