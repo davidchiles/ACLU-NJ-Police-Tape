@@ -9,6 +9,7 @@
 #import "LecturePlayerViewController.h"
 #import "ASIFormDataRequest.h"
 
+
 @implementation LecturePlayerViewController
 @synthesize submitLabel;
 @synthesize durationLabel;
@@ -160,9 +161,27 @@
 
 - (IBAction)submitPressed:(id)sender 
 {
+    /*
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Submit to OpenWatch" message:@"Would you like to submit your recording to www.openwatch.net?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:nil];
     [alert addButtonWithTitle:@"Yes"];
     [alert show];
+     */
+    ACLUConfirmUpload * confirmUpload = [[ACLUConfirmUpload alloc] init];
+    confirmUpload.delegate = self;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:confirmUpload];
+
+    [self.navigationController presentModalViewController:navController animated:YES];
+    
+}
+
+-(void)uploadPressed
+{
+    if(!locationSwitch.on)
+        recording.location = @"";
+    [recording submitRecordingWithDelegate:self];
+    submitLabel.text = @"Submitting...";
+    submitLabel.textColor = [UIColor whiteColor];
+    
 }
 
 - (IBAction)playPressed:(id)sender 

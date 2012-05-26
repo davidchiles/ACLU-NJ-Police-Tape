@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "Recording.h"
+#import "ACLUConfirmUpload.h"
 
 
-@interface LecturePlayerViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate> {
+@interface LecturePlayerViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate,ACLUConfirmUploadDelegate> {
     Recording* recording;
     int duration;
     BOOL isPlaying;
