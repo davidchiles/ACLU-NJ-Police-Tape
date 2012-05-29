@@ -50,6 +50,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 #import "SpeakHereViewController.h"
 #import "RecordingsListViewController.h"
 #import "ACLUKnowYourRightsViewController.h"
+#import "ACLUAboutViewController.h"
 
 @implementation SpeakHereViewController
 
@@ -91,6 +92,17 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 }
 */
 
+- (IBAction)infoButtonPressed:(id)sender
+{
+    ACLUAboutViewController * aboutViewController = [[ACLUAboutViewController alloc] init];
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:aboutViewController];
+    
+    [navController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+    
+    [self presentModalViewController:navController animated:YES];
+}
+
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 1)
     {
@@ -107,8 +119,6 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
     // Release anything that's not essential, such as cached data
 }
-
-
 
 - (IBAction)playPressed:(id)sender {
     RecordingsListViewController *recordingListController = [[RecordingsListViewController alloc] init];

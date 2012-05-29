@@ -40,6 +40,10 @@
 		6337BFE5157041C7005A3FB3 /* ACLUConfirmUpload.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFE3157041C7005A3FB3 /* ACLUConfirmUpload.xib */; };
 		6337BFE91570527F005A3FB3 /* ConfirmUploadInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6337BFE71570527E005A3FB3 /* ConfirmUploadInfoViewController.m */; };
 		6337BFEA1570527F005A3FB3 /* ConfirmUploadInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6337BFE81570527F005A3FB3 /* ConfirmUploadInfoViewController.xib */; };
+		6362762115742F2300190486 /* ACLUAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362761F15742F2300190486 /* ACLUAboutViewController.m */; };
+		6362762215742F2300190486 /* ACLUAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362762015742F2300190486 /* ACLUAboutViewController.xib */; };
+		6362762715743B8300190486 /* ACLU_EULAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362762515743B8300190486 /* ACLU_EULAViewController.m */; };
+		6362762815743B8300190486 /* ACLU_EULAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362762615743B8300190486 /* ACLU_EULAViewController.xib */; };
 		D94A6B42133066A700A91096 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D94A6B40133066A700A91096 /* logo.png */; };
 		D9839B7213B6CF7700B3B20C /* LecturePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9839B6F13B6CF7700B3B20C /* LecturePlayerViewController.m */; };
 		D9839B7313B6CF7700B3B20C /* Recording.m in Sources */ = {isa = PBXBuildFile; fileRef = D9839B7113B6CF7700B3B20C /* Recording.m */; };
@@ -135,6 +139,12 @@
 		6337BFE61570527E005A3FB3 /* ConfirmUploadInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmUploadInfoViewController.h; sourceTree = "<group>"; };
 		6337BFE71570527E005A3FB3 /* ConfirmUploadInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmUploadInfoViewController.m; sourceTree = "<group>"; };
 		6337BFE81570527F005A3FB3 /* ConfirmUploadInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmUploadInfoViewController.xib; sourceTree = "<group>"; };
+		6362761E15742F2300190486 /* ACLUAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLUAboutViewController.h; sourceTree = "<group>"; };
+		6362761F15742F2300190486 /* ACLUAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACLUAboutViewController.m; sourceTree = "<group>"; };
+		6362762015742F2300190486 /* ACLUAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACLUAboutViewController.xib; sourceTree = "<group>"; };
+		6362762415743B8300190486 /* ACLU_EULAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACLU_EULAViewController.h; path = Classes/ACLU_EULAViewController.h; sourceTree = "<group>"; };
+		6362762515743B8300190486 /* ACLU_EULAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACLU_EULAViewController.m; path = Classes/ACLU_EULAViewController.m; sourceTree = "<group>"; };
+		6362762615743B8300190486 /* ACLU_EULAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACLU_EULAViewController.xib; path = Classes/ACLU_EULAViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		D94A6B41133066A700A91096 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/logo.png; sourceTree = "<group>"; };
 		D9839B6E13B6CF7700B3B20C /* LecturePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LecturePlayerViewController.h; sourceTree = "<group>"; };
@@ -243,6 +253,12 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				6362762415743B8300190486 /* ACLU_EULAViewController.h */,
+				6362762515743B8300190486 /* ACLU_EULAViewController.m */,
+				6362762615743B8300190486 /* ACLU_EULAViewController.xib */,
+				6362761E15742F2300190486 /* ACLUAboutViewController.h */,
+				6362761F15742F2300190486 /* ACLUAboutViewController.m */,
+				6362762015742F2300190486 /* ACLUAboutViewController.xib */,
 				6337BFE61570527E005A3FB3 /* ConfirmUploadInfoViewController.h */,
 				6337BFE71570527E005A3FB3 /* ConfirmUploadInfoViewController.m */,
 				6337BFE81570527F005A3FB3 /* ConfirmUploadInfoViewController.xib */,
@@ -494,6 +510,8 @@
 				6337BFE0157026B5005A3FB3 /* icon@2x.png in Resources */,
 				6337BFE5157041C7005A3FB3 /* ACLUConfirmUpload.xib in Resources */,
 				6337BFEA1570527F005A3FB3 /* ConfirmUploadInfoViewController.xib in Resources */,
+				6362762215742F2300190486 /* ACLUAboutViewController.xib in Resources */,
+				6362762815743B8300190486 /* ACLU_EULAViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +548,8 @@
 				6337BFCD156FFCF0005A3FB3 /* ACLUKnowYourRights.m in Sources */,
 				6337BFE4157041C7005A3FB3 /* ACLUConfirmUpload.m in Sources */,
 				6337BFE91570527F005A3FB3 /* ConfirmUploadInfoViewController.m in Sources */,
+				6362762115742F2300190486 /* ACLUAboutViewController.m in Sources */,
+				6362762715743B8300190486 /* ACLU_EULAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +620,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ballinger (9P62QGET7G)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Chiles (8TSMC84YJV)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -614,7 +634,7 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PRODUCT_NAME = CopRecorder;
-				PROVISIONING_PROFILE = "600B8398-E5F8-4EEF-9FBC-87793F13BCDE";
+				PROVISIONING_PROFILE = "6EF2E80F-3407-4FB3-8CE7-98BDC7A21848";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -624,7 +644,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Chris Ballinger (9P62QGET7G)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: David Chiles (8TSMC84YJV)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SpeakHere_Prefix.pch;
@@ -636,7 +656,7 @@
 					/usr/lib/libSystem.B.dylib,
 				);
 				PRODUCT_NAME = CopRecorder;
-				PROVISIONING_PROFILE = "600B8398-E5F8-4EEF-9FBC-87793F13BCDE";
+				PROVISIONING_PROFILE = "6EF2E80F-3407-4FB3-8CE7-98BDC7A21848";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
