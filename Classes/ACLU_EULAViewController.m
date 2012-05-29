@@ -37,6 +37,7 @@
     textView.textAlignment = UITextAlignmentCenter;
     //textView.clipsToBounds = NO;
     textView.scrollEnabled = NO;
+    textView.font = [UIFont systemFontOfSize:16.0];
     
     [self.scrollView addSubview:textView];
     
