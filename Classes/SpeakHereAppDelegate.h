@@ -48,6 +48,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 */
 
 #import <UIKit/UIKit.h>
+#import "Crittercism.h"
 
 @class SpeakHereViewController;
 

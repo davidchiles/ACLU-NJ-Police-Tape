@@ -26,6 +26,8 @@
 @synthesize stopButton;
 @synthesize submitButton;
 @synthesize player;
+@synthesize emailTextField;
+@synthesize fieldsScrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -77,6 +79,11 @@
         submitLabel.text = @"Previously Submitted";
         submitLabel.textColor = [UIColor greenColor];
     }
+    
+    CGSize cSize = CGSizeMake(320, 253);
+    [fieldsScrollView setContentSize:cSize];
+    emailTextField.tag = 1;
+    [emailTextField setKeyboardType:UIKeyboardTypeEmailAddress];
 }
 
 - (void)playerItemDidReachEnd:(NSNotification *)notification {
@@ -214,13 +221,44 @@
     isPlaying = NO;
 
 }
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (textField.tag == 1)
+    {
+        CGPoint bottomOffset = CGPointMake(0, fieldsScrollView.contentSize.height - self.fieldsScrollView.bounds.size.height);
+        [fieldsScrollView setContentOffset:bottomOffset animated:YES];
+        
+    }
+    else {
+        [self.fieldsScrollView setContentOffset:CGPointZero animated:YES];
+    }
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    if(textField.tag == 1)
+    {
+        [self.fieldsScrollView setContentOffset:CGPointZero animated:YES];
+    }
+    
+    
     [textField resignFirstResponder];
     
-    recording.name = nameTextField.text;
-    recording.privateDescription = privateDescriptionTextField.text;
-    recording.publicDescription = publicDescriptionTextField.text;
+    recording.name = [nameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    NSString * email = [emailTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    
+    if(![email isEqualToString:@""])
+    {
+        recording.privateDescription = [NSString stringWithFormat:@"%@ [%@]", [privateDescriptionTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]],email];
+        
+    }
+    else {
+        recording.privateDescription = [privateDescriptionTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    }
+    
+    
+    recording.publicDescription = [publicDescriptionTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     [recording saveMetadata];
     return YES;
 }
@@ -234,7 +272,7 @@
     recording.isSubmitted = YES;
     [recording saveMetadata];
     
-    submitLabel.text = @"Submission successful!";
+    submitLabel.text = @"Submission Successful";
     submitLabel.textColor = [UIColor greenColor];
     progressView.hidden = TRUE;
 }

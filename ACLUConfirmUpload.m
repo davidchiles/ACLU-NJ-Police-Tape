@@ -41,6 +41,7 @@
     UIBarButtonItem * cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonPressed:)];
     [self.navigationItem setLeftBarButtonItem:cancelButton animated:YES];
     
+    //NSLog(@"%@",self.view.backgroundColor.description);
 }
 
 - (IBAction)yesButtonPressed:(id)sender
@@ -52,6 +53,8 @@
 
 - (IBAction)contactButtonPressed:(id)sender
 {
+    NSURL *url = [ [ NSURL alloc ] initWithString: @"https://www.aclu-nj.org/yourrights/fileacomplaint/onlinecomplaint"];
+    [[UIApplication sharedApplication] openURL:url];
     
     
 }

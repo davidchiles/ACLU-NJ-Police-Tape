@@ -8,7 +8,9 @@
 	<string>home</string>
 	<key>Arrest</key>
 	<string>arrest</string>
-	<key>Stop</key>
-	<string>stop</string>
+	<key>Street</key>
+	<string>street</string>
+	<key>Always</key>
+	<string>always</string>
 </dict>
 </plist>

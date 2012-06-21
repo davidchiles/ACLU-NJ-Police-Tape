@@ -52,6 +52,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 #import <CoreLocation/CoreLocation.h>
 #import "Recording.h"
 #import "ACLU_EULAViewController.h"
+#import "ACLUSecrets.h"
 
 @implementation SpeakHereAppDelegate
 
@@ -59,7 +60,11 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 @synthesize viewController;
 @synthesize navController;
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+- (void)applicationDidFinishLaunching:(UIApplication *)application { 
+    
+    [Crittercism initWithAppID: crittercismAppleId
+                        andKey: crittercismKey
+                     andSecret: crittercismSecret];
     
     navController = [[UINavigationController alloc] initWithRootViewController:viewController];
     

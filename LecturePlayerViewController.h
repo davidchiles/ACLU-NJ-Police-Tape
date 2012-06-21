@@ -45,8 +45,10 @@
 @property (nonatomic) IBOutlet UISlider *playerSlider;
 @property (nonatomic) IBOutlet UIBarButtonItem *playButton;
 @property (nonatomic) IBOutlet UIBarButtonItem *stopButton;
-@property (nonatomic) IBOutlet UIBarButtonItem *submitButton;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *submitButton;
 @property (nonatomic)     AVAudioPlayer* player;
+@property (nonatomic,strong) IBOutlet UITextField *emailTextField;
+@property (nonatomic,strong) IBOutlet UIScrollView *fieldsScrollView;
 
 - (IBAction)submitPressed:(id)sender;
 - (IBAction)playPressed:(id)sender;

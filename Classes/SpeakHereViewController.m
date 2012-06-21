@@ -81,7 +81,7 @@ Copyright (C) 2009 Apple Inc. All Rights Reserved.
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
 }
 
 /*
