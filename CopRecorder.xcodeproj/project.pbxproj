@@ -43,11 +43,11 @@
 		6362762215742F2300190486 /* ACLUAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362762015742F2300190486 /* ACLUAboutViewController.xib */; };
 		6362762715743B8300190486 /* ACLU_EULAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6362762515743B8300190486 /* ACLU_EULAViewController.m */; };
 		6362762815743B8300190486 /* ACLU_EULAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6362762615743B8300190486 /* ACLU_EULAViewController.xib */; };
+		637AB8F415AE1FF9006C0853 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 637AB8F215AE1FF9006C0853 /* default.png */; };
+		637AB8F515AE1FF9006C0853 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 637AB8F315AE1FF9006C0853 /* default@2x.png */; };
 		639BEF191593BD0D008EC605 /* aclu_logo_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BEF171593BD0D008EC605 /* aclu_logo_small.png */; };
 		639BEF1A1593BD0D008EC605 /* aclu_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BEF181593BD0D008EC605 /* aclu_logo.png */; };
 		639BEF1C1593C22E008EC605 /* always.html in Resources */ = {isa = PBXBuildFile; fileRef = 639BEF1B1593C22E008EC605 /* always.html */; };
-		639BEF1F1593C518008EC605 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BEF1D1593C518008EC605 /* default.png */; };
-		639BEF201593C518008EC605 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 639BEF1E1593C518008EC605 /* default@2x.png */; };
 		63AFFA871580304000D27FAD /* libCrittercism_v3_2_5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AFFA211580304000D27FAD /* libCrittercism_v3_2_5.a */; };
 		63AFFA881580304000D27FAD /* crittercism-arrow-l.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AFFA3D1580304000D27FAD /* crittercism-arrow-l.png */; };
 		63AFFA891580304000D27FAD /* crittercism-arrow-l@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 63AFFA3E1580304000D27FAD /* crittercism-arrow-l@2x.png */; };
@@ -224,11 +224,11 @@
 		6362762415743B8300190486 /* ACLU_EULAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACLU_EULAViewController.h; path = Classes/ACLU_EULAViewController.h; sourceTree = "<group>"; };
 		6362762515743B8300190486 /* ACLU_EULAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ACLU_EULAViewController.m; path = Classes/ACLU_EULAViewController.m; sourceTree = "<group>"; };
 		6362762615743B8300190486 /* ACLU_EULAViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACLU_EULAViewController.xib; path = Classes/ACLU_EULAViewController.xib; sourceTree = "<group>"; };
+		637AB8F215AE1FF9006C0853 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		637AB8F315AE1FF9006C0853 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		639BEF171593BD0D008EC605 /* aclu_logo_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aclu_logo_small.png; sourceTree = "<group>"; };
 		639BEF181593BD0D008EC605 /* aclu_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aclu_logo.png; sourceTree = "<group>"; };
 		639BEF1B1593C22E008EC605 /* always.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = always.html; sourceTree = "<group>"; };
-		639BEF1D1593C518008EC605 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
-		639BEF1E1593C518008EC605 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		63AFFA1D1580304000D27FAD /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
 		63AFFA1E1580304000D27FAD /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
 		63AFFA1F1580304000D27FAD /* CrittercismJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismJSONKit.h; sourceTree = "<group>"; };
@@ -373,7 +373,6 @@
 		D9FB6E2513327EEC00E8A07C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D9FB6E301332855C00E8A07C /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
 		D9FB6E311332855C00E8A07C /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
-		F73FE19D0F743C1900F0F3CC /* ReadMe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe.txt; sourceTree = "<group>"; };
 		F76949C50F40F2AC006C6FBF /* SpeakHereController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeakHereController.h; sourceTree = "<group>"; };
 		F76949E10F40F32A006C6FBF /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
 		F76949E20F40F32A006C6FBF /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
@@ -475,7 +474,6 @@
 				D9839B7113B6CF7700B3B20C /* Recording.m */,
 				6337BFA8156FF61F005A3FB3 /* ASIHTTPRequest */,
 				D9A4C6821331583E009A0CB1 /* External */,
-				F73FE19D0F743C1900F0F3CC /* ReadMe.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				F76949E00F40F32A006C6FBF /* iPublicUtility */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -498,11 +496,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				637AB8F215AE1FF9006C0853 /* default.png */,
+				637AB8F315AE1FF9006C0853 /* default@2x.png */,
 				D9839BAC13B6FD3A00B3B20C /* eye.png */,
 				6337BFCF1570069C005A3FB3 /* knowYourRights.plist */,
 				6337BFD9157016C5005A3FB3 /* knowyourrights.css */,
-				639BEF1D1593C518008EC605 /* default.png */,
-				639BEF1E1593C518008EC605 /* default@2x.png */,
 				6337BFD115700B33005A3FB3 /* arrest.html */,
 				6337BFD215700B33005A3FB3 /* car.html */,
 				6337BFD315700B33005A3FB3 /* home.html */,
@@ -922,8 +920,8 @@
 				639BEF191593BD0D008EC605 /* aclu_logo_small.png in Resources */,
 				639BEF1A1593BD0D008EC605 /* aclu_logo.png in Resources */,
 				639BEF1C1593C22E008EC605 /* always.html in Resources */,
-				639BEF1F1593C518008EC605 /* default.png in Resources */,
-				639BEF201593C518008EC605 /* default@2x.png in Resources */,
+				637AB8F415AE1FF9006C0853 /* default.png in Resources */,
+				637AB8F515AE1FF9006C0853 /* default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
