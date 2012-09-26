@@ -9,6 +9,7 @@
 #import "Recording.h"
 #import "ASIFormDataRequest.h"
 #import "LecturePlayerViewController.h"
+#import "ACLUConstants.h"
 
 @implementation Recording
 
@@ -120,7 +121,7 @@
         }
         
         LecturePlayerViewController* lecturePlayer = (LecturePlayerViewController*)delegate;
-        [request setData:recording withFileName:[NSString stringWithFormat:@"%d.caf",unixTime] andContentType:@"audio/x-caf" forKey:@"rec_file"];
+        [request setData:recording withFileName:[NSString stringWithFormat:@"%d%@.caf",unixTime,ACLUNJFileSuffix] andContentType:@"audio/x-caf" forKey:@"rec_file"];
         lecturePlayer.progressView.progress = 0.0;
         lecturePlayer.progressView.hidden = FALSE;
         [request setShowAccurateProgress:YES];

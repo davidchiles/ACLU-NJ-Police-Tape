@@ -49,6 +49,7 @@
     webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
     | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
     webView.backgroundColor = [UIColor colorWithRed:0.452681 green:0.529382 blue:0.691022 alpha:1];
+    self.view.backgroundColor = [UIColor colorWithRed:0.452681 green:0.529382 blue:0.691022 alpha:1];
     for(UIView *wview in [[[webView subviews] objectAtIndex:0] subviews]) { 
         if([wview isKindOfClass:[UIImageView class]]) { wview.hidden = YES; } 
     }   
@@ -106,6 +107,7 @@
 -(void) viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    [self.navigationController setToolbarHidden:YES animated:YES];
     //[self.navigationController setToolbarHidden:YEs animated:animated];
 }
 /////UIWebView Delegate Methods
